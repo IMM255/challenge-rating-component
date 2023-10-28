@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$text:'Overpass';
+
+body{
+    background: $Very-Dark-Blue;
+    color: hsl(0, 0%, 100%);
+    font-family: $text;
+    font-size: 15px;
+}
+
+.container{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .rating-container{
+        width: 280px;
+        padding: 20px;
+        border-radius: 15px;
+        background: darken($color: $Dark-Blue, $amount: 5%);
+        .rating-img{
+            background:$Dark-Blue ;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            align-items: center;
+            line-height: 35px;
+            img{
+                width: 12px;
+                height: 12px;
+            }
+        }
+        .title{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 22px;
+        }
+        .desc{
+            
+            margin-top: 5px;
+            font-size: 12px;
+            color: $Light-Grey;
+            line-height: 18px;
+        }
+        .number {
+            .rating-val.active{
+                background-color: $Light-Grey;
+                color: $White;
+            }
+        }
+        .number span{
+            background-color: $Dark-Blue;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            line-height: 45px;
+            margin-right: 13px;
+            font-size: 12px;
+            color: $Light-Grey;
+        }
+        
+        .number span:hover{
+            cursor: pointer;
+            background-color: $Orange;
+            color: $White;
+        }
+        .btn{
+            margin-top: 25px;
+            background-color: $Orange;
+            color: $White;
+            padding: 8px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 20px;
+            border: none;
+            width: 100%;   
+        }
+        .btn:hover{
+            background-color: $White;
+            color: $Orange;
+            cursor: pointer;
+        }
+    }
+    .thanks-container{
+        text-align: center;
+        width: 300px;
+        border-radius: 15px;
+        padding: 20px;
+        background: darken($color: $Dark-Blue, $amount: 5%);
+        .thanks-img{
+            margin-top: 20px;
+        }
+        .give-rating{
+            background: $Dark-Blue;
+            color: $Orange;
+            border-radius: 10px;
+            width: 170px;
+            margin: 0 auto;
+            p{
+                padding: 5px;
+                color: $Orange;
+            }
+        }
+        h3{
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 13px;
+            color: $Light-Grey;
+        }
+    }
+    .attribution{
+        margin-top: 30px;
+    }
+}
