@@ -9,7 +9,7 @@ const RatingValue = ratingSelected.forEach((rate) => {
     rate.addEventListener("click",() => {
         const RatingValue = rate.innerHTML;
         spanNumber.textContent = RatingValue;
-        if (RatingValue > 0 || RatingValue < 5) {
+        if (RatingValue > 0) {
             btn.addEventListener("click", () => {
               thanksContainer.classList.remove("hidden");
               ratingContainer.classList.add("hidden");
