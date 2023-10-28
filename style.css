@@ -12,6 +12,9 @@ body {
   top: 50%;
   left: 50%;
 }
+.container .hidden {
+  display: none;
+}
 .container .rating-container {
   width: 280px;
   padding: 20px;
@@ -46,7 +49,8 @@ body {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
 }
-.container .rating-container .number span {
+.container .rating-container .number button {
+  border: none;
   background-color: hsl(213, 19%, 18%);
   display: inline-block;
   width: 40px;
@@ -54,12 +58,12 @@ body {
   border-radius: 50%;
   text-align: center;
   align-items: center;
-  line-height: 45px;
+  line-height: 40px;
   margin-right: 13px;
   font-size: 12px;
   color: hsl(217, 12%, 63%);
 }
-.container .rating-container .number span:hover {
+.container .rating-container .number button:hover {
   cursor: pointer;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);

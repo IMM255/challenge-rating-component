@@ -15,6 +15,9 @@ body{
 }
 
 .container{
+    .hidden{
+        display: none;
+    }
     transform: translate(-50%,-50%);
     position: absolute;
     top: 50%;
@@ -55,7 +58,8 @@ body{
                 color: $White;
             }
         }
-        .number span{
+        .number button{
+            border: none;
             background-color: $Dark-Blue;
             display: inline-block;
             width: 40px;
@@ -63,13 +67,13 @@ body{
             border-radius: 50%;
             text-align: center;
             align-items: center;
-            line-height: 45px;
+            line-height: 40px;
             margin-right: 13px;
             font-size: 12px;
             color: $Light-Grey;
         }
         
-        .number span:hover{
+        .number button:hover{
             cursor: pointer;
             background-color: $Orange;
             color: $White;
